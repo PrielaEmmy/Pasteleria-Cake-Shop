@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE-edge">
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+   <title>Cake Shop</title>
+</head>
+<body>
+    <section class="menu">
+        <div class="nav"> 
+             <div class="logo"><h1>Pasteler<b>ia</b></h1></div> 
+             <ul>
+                <li><a class="#active" href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#mycart">Cart</a></li>
+             </ul>
+             <div>
+                <input class="signin" type="submit" value="Sign In" name="signin">
+                <input class="signup" type="submit" value="Sign Up" name="signup">
+             </div>
+        </div>
+    </section>
+    <section class="grid">
+      <div class="content">
+          <div class="content-left">
+             <div class="info">
+                <h2>Order Your Best <br>Food Anytime</h2>
+                <p>Hey, Our delicious food is waiting for you, <br>We can always near to you with your fresh item of food</p>
+             </div>
+             <button>Explore Food</button>
+            </div>
+          <div class="content-right">
+          <img src="img/cakeheart-removebg-preview.png" alt="">
+          </div>
+      </div>
+    </section>
+   <div class="product-container">
+      <h1 class="product-type" id="menu">Menu</h1>
+      <div class="products">
+         <div class="product" id="product1">
+            <img src="img/redvelvet.jpg" alt="product-image">
+            <p class="product-description">
+              Red Velvet Cake
+            </p>
+            <p class="product-count" data-count="0">On cart: 0</p>
+            <button class="add-to-cart" onclick="addToCart('menu)">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeToCart('menu')">Remove From Cart</button>
+
+          
+         </div>
+         <div class="product" id="product2">
+            <img src="img/curls.jpg" alt="product-image">
+            <p class="product-description">
+               Dark Chocolate Curls
+            </p>
+            <p class="product-count" data-count="0">On cart: 0</p>
+            <button class="add-to-cart" onclick="addToCart('menu')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeToCart('menu')">Remove From Cart</button>
+
+           
+         </div>
+         <div class="product" id="product3">
+            <img src="img/marble.jpg" alt="product-image">
+            <p class="product-description">
+               Marble Cake
+            </p>
+            <p class="product-count" data-count="0">On cart: 0</p>
+            <button class="add-to-cart" onclick="addToCart('menu')">Add to Cart</button>
+            <button class="remove-from-cart" onclick="removeToCart('menu')">Remove From Cart</button>
+
+         </div>
+      </div>
+
+
+       <button onclick="goBack()">Go Back</button>
+
+
+      <h1 class="product-type" id="about">About</h1>
+      <p>At Pasteleria, we believe that exceptional customer service is just as important as our delicious treats. We strive to create a warm and inviting atmosphere where you feel welcome and cared for. Our friendly and knowledgeable staff is always ready to assist you in selecting the perfect sweet treat or guiding you through the customization process.</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+       <button onclick="goBack()">Go Back</button>
+       
+      <h1 class="product-type" id="contact">Contact Us</h1>
+         <p>If you have any questions or concerns, feel free to contact us.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+
+
+    <div class="cart-container">
+       <h1 class="product-type" id="mycart">Cart</h1>
+    <div class="products">
+          <!-- Cart items will be added dynamically here -->
+    </div>
+       <button class="checkout-button">Checkout</button>
+    </div>
+
+
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.<br>@pasteleria</p>
+    </footer>
+
+    <button onclick="goBack()">Go Back</button>
+
+   <script src="script.js"></script>
+
+</body>
+</html>
